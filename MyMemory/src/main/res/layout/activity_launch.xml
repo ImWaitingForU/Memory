@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.chan.app.myapplication.LaunchActivity">
+
+    <EditText
+        android:id="@+id/et_re_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_re_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_re_pwd"
+        android:layout_alignStart="@+id/et_re_pwd"
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_re_pwd"
+        android:layout_below="@+id/et_re_pwd"
+        android:text="注册"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_re_pwd"
+        android:layout_below="@+id/et_re_pwd"
+        android:text="登录"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/weibologo"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/qqlogo"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/wechatlogo"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
